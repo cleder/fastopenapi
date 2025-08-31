@@ -2,10 +2,8 @@
 name = "fastopenapi"
 version = "0.7.0"
 description = "FastOpenAPI is a library for generating and integrating OpenAPI schemas using Pydantic v2 and various frameworks (AioHttp, Falcon, Flask, Quart, Sanic, Starlette, Tornado)."
-authors = [
-    {name = "Nikita Ryzhenkov", email = "nikita.ryzhenkoff@gmail.com"}
-]
-license = {text = "MIT License"}
+authors = [{ name = "Nikita Ryzhenkov", email = "nikita.ryzhenkoff@gmail.com" }]
+license = { text = "MIT License" }
 readme = "README.md"
 requires-python = ">=3.10"
 
@@ -30,9 +28,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-dependencies = [
-    "pydantic (>=2.10.6,<3.0.0)"
-]
+dependencies = ["pydantic (>=2.10.6,<3.0.0)"]
 
 [project.optional-dependencies]
 aiohttp = ["aiohttp (>=3.11.0,<3.12.0)"]
@@ -43,6 +39,7 @@ starlette = ["starlette (>=0.46.0,<0.47.0)"]
 quart = ["quart (>=0.20.0, <0.21.0)"]
 tornado = ["tornado (>=6.4.0, <6.5.0)"]
 django = ["django (>=5.2,<6.0)"]
+pyramid = ["pyramid (>=2.0,<3.0)"]
 
 [project.urls]
 Homepage = "https://fastopenapi.fatalyst.dev/"
